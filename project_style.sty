@@ -1,0 +1,49 @@
+\usepackage[utf8]{inputenc}
+\usepackage[left=25mm, right=25mm, top=20mm, bottom=20mm,includehead,includefoot, headheight=15pt]{geometry}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[hyphens]{url}
+\usepackage{amssymb,amsmath, graphicx,fancyvrb,  comment, multirow, float,color, listings, setspace}
+\usepackage[nottoc]{tocbibind}
+
+\lstset{
+	language=R,                  % set the language to R
+	backgroundcolor=\color{white}, % background color
+	basicstyle=\ttfamily\footnotesize, % font style
+	keywordstyle=\color{black},     % color of keywords
+	commentstyle=\color{green},    % color of comments
+	stringstyle=\color{black},       % color of strings
+	morekeywords={*,...},          % add extra keywords
+	numberstyle=\tiny\color{black}, % line number style
+	numbers=left,                 % show line numbers on the left
+	stepnumber=1,                 % line number step
+	numbersep=5pt,                % space between line numbers and code
+	frame=single,                 % add a frame around the code
+	rulecolor=\color{black},      % color of the frame
+	breaklines=true,              % automatic line breaks
+	captionpos=b,                 % position of the caption
+	escapeinside={\%*}{*)},       % escape to LaTeX inside code
+	morecomment=[l][\color{magenta}]{\#}, % special comment style
+}
+
+\onehalfspacing
+\usepackage[format=plain,font=it]{caption}
+\usepackage[toc,page]{appendix}
+
+\def\equationautorefname~#1\null{Equation (#1)\null}
+\def\sectionautorefname{Section}
+\def\subsectionautorefname{Subsection}
+\def\subsubsectionautorefname{Sub-subsection}
+\renewcommand{\lstlistingname}{Code}
+\newcommand*{\Appendixautorefname}{Appendix}
+\providecommand*{\lstlistingautorefname}{Code}
+\setlength{\parindent}{0cm}
+
+\usepackage{hyperref}
+\usepackage{graphicx}
+
+\hypersetup{colorlinks= true, %Colours links instead of ugly boxes
+	urlcolor= black, %Colour for external hyperlinks
+	linkcolor= black, %Colour of internal links
+	citecolor= black %Colour of citations
+}
+%if you are going to change the above colours please do not use red (this is not useful for students/staff with colourblindness).
